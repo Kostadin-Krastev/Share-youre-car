@@ -1,0 +1,53 @@
+html,
+body {
+  font-size: 16px;
+  background-color: #eeece6;
+}
+
+/* HEADER SECTION */
+header {
+  display: flex;
+}
+
+.logo-container,
+.main-menu {
+  padding: 2rem;
+}
+
+/* Logo items and Search input */
+.logo-container {
+  font-size: 1.125rem;
+  background-color: #ab836a;
+}
+
+/* Main menu */
+.main-menu {
+  background-color: #685b4d;
+}
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* GLOBAL BORDER RADIUS */
+.main-menu,
+.logo-container {
+  border-radius: 14px;
+}
+
+/* GLOBAL BACKGROUND-COLOR */
+
+/* GLOBAL FONT COLOR */
+li a,
+.logo-and-search {
+  color: #fff;
+}
