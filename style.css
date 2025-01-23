@@ -1,53 +1,100 @@
 html,
 body {
+  font-family: 'Poppins';
   font-size: 16px;
   background-color: #eeece6;
 }
 
-/* HEADER SECTION */
-header {
+/* HEADER SECTION  */
+header,
+.logo-and-search-section,
+.menu-section {
   display: flex;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .logo-container,
+.search-container,
 .main-menu {
-  padding: 2rem;
+  padding: 1rem;
 }
 
-/* Logo items and Search input */
-.logo-container {
+/* Icon items and Search input */
+.logo-container,
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: 1.125rem;
-  background-color: #ab836a;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.search-container {
+  flex: 2;
+}
+
+.fa-car,
+.fa-magnifying-glass {
+  font-size: 1.6rem;
+}
+
+.search-field {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
 }
 
 /* Main menu */
-.main-menu {
-  background-color: #685b4d;
+.menu-section {
+  flex: 2;
 }
+
 .menu-items {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
   list-style-type: none;
 }
 
-li a {
+.menu-items li a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
 }
 
+a:hover {
+  color: #ff4f00;
+}
+
 /* GLOBAL BORDER RADIUS */
 .main-menu,
-.logo-container {
-  border-radius: 14px;
+.logo-container,
+.search-container {
+  border-radius: 1.5rem;
 }
 
 /* GLOBAL BACKGROUND-COLOR */
+.logo-container {
+  background-color: #ab836a;
+}
+
+.search-container,
+.main-menu {
+  background-color: #685b4d;
+}
 
 /* GLOBAL FONT COLOR */
 li a,
-.logo-and-search {
+.logo-and-search-section,
+.search-field {
   color: #fff;
 }
